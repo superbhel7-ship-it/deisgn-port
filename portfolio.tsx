@@ -1,171 +1,258 @@
 import React from 'react';
 
-// --- SVG Icon Components ---
-// Using inline SVGs to avoid external dependencies.
-
-const DribbbleIcon = () => (
-  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM12 21.6C6.70025 21.6 2.4 17.2997 2.4 12C2.4 6.70025 6.70025 2.4 12 2.4C17.2997 2.4 21.6 6.70025 21.6 12C21.6 17.2997 17.2997 21.6 12 21.6ZM15.931 16.5135C15.9031 16.5141 15.8752 16.512 15.848 16.5073C13.2515 15.8624 10.7423 15.429 8.2163 15.2018C8.28186 15.412 8.34741 15.6222 8.41566 15.8306C8.80287 17.0298 9.40798 18.1633 10.2188 19.165C10.3807 19.356 10.3444 19.6334 10.1534 19.7953C9.96238 19.9572 9.68499 19.9935 9.49301 19.8316C8.59926 18.7363 7.9288 17.5225 7.49129 16.2238C7.3826 15.9189 7.53177 15.5891 7.83669 15.4804C7.89311 15.4601 7.95123 15.4452 8.00936 15.4357C10.5936 15.6683 13.1561 16.1086 15.8078 16.7645C16.1133 16.8404 16.2709 17.1558 16.195 17.4613C16.1118 17.7946 15.7762 17.9719 15.4475 17.8767L15.931 16.5135Z M17.9702 11.232C15.8335 10.3344 13.5681 9.87225 11.2952 9.83704C11.5319 10.5137 11.7247 11.2014 11.8735 11.9001C12.3564 13.9877 12.1159 16.104 11.1685 17.9688C11.0251 18.232 10.7303 18.3371 10.4671 18.1937C10.2039 18.0503 10.1015 17.753 10.2449 17.4898C11.071 15.8821 11.2829 14.0535 10.8522 12.1868C10.6974 11.4604 10.4965 10.745 10.252 10.0416C10.1873 9.87413 10.0211 9.75626 9.84275 9.75355C9.83816 9.75355 9.83442 9.75355 9.83067 9.75355C6.18231 9.80302 2.92484 11.2952 2.8716 11.3223C2.58547 11.4884 2.48491 11.8413 2.65104 12.1274C2.81717 12.4136 3.17009 12.5141 3.45622 12.348C3.47953 12.3345 6.47161 10.5982 9.84275 10.5487C12.986 10.5982 15.1558 11.2722 17.2023 12.1427C17.4876 12.2614 17.8189 12.1427 17.9702 11.8574C18.1215 11.5722 18.0028 11.2418 17.7174 11.0931L17.9702 11.232Z M19.8248 5.76C19.7118 5.76 19.6015 5.78795 19.5021 5.84078C16.8778 7.37977 13.916 8.3116 10.9333 8.6186C11.1444 9.12301 11.3195 9.63749 11.4586 10.1604C11.5134 10.3662 11.3785 10.5794 11.1727 10.6342C10.9669 10.689 10.7537 10.5541 10.6989 10.3483C10.5525 9.79822 10.3698 9.2566 10.1514 8.72902C10.0825 8.55694 9.91444 8.43544 9.72917 8.41165C9.72189 8.4108 9.7146 8.4108 9.70732 8.4108C7.15372 8.4108 4.70678 7.82823 4.65354 7.81469C4.34863 7.72865 4.14815 7.42738 4.23419 7.12247C4.32023 6.81755 4.6215 6.61707 4.92641 6.70311C4.94972 6.71039 7.3065 7.25852 9.72917 7.25852C12.5645 6.9588 15.4243 5.99222 17.9535 4.38029C18.2255 4.21272 18.5757 4.26941 18.7433 4.54142C18.8685 4.74357 18.8255 4.99842 18.6579 5.166C18.2392 5.56191 17.7262 5.85098 17.1565 6.01298C17.5188 6.01468 17.8738 5.96831 18.2144 5.87522C18.5294 5.79206 18.84 5.94052 18.9232 6.25555C19.0064 6.57058 18.8579 6.8856 18.5429 6.96876C18.0699 7.08663 17.5816 7.13572 17.0888 7.11479C17.374 7.3753 17.6184 7.66904 17.8176 8.00078C17.9816 8.26764 18.2885 8.3682 18.5553 8.20421C18.8222 8.04022 18.9228 7.7333 18.7588 7.46644C18.5418 7.10086 18.2741 6.76828 17.962 6.51624C19.0135 6.2642 19.8248 5.76 19.8248 5.76Z"/>
-  </svg>
+// --- SVG Mockup for iPad/Tablet ---
+const IpadMockup = () => (
+  <div className="w-full h-full flex items-center justify-center p-4 md:p-8">
+    <svg viewBox="0 0 1024 768" className="w-full h-auto max-w-full" style={{filter: 'drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1))', aspectRatio: '4/3'}}>
+      <rect x="0" y="0" width="1024" height="768" rx="40" fill="#1f2937" />
+      <rect x="40" y="40" width="944" height="688" fill="#ffffff" />
+      <circle cx="512" cy="20" r="6" fill="#4b5563" />
+      <rect x="70" y="70" width="200" height="628" fill="#f3f4f6" />
+      <rect x="90" y="90" width="160" height="20" rx="5" fill="#e5e7eb" />
+      <rect x="90" y="130" width="120" height="10" rx="3" fill="#d1d5db" />
+      <rect x="90" y="150" width="160" height="10" rx="3" fill="#d1d5db" />
+      <rect x="90" y="170" width="140" height="10" rx="3" fill="#d1d5db" />
+      <rect x="300" y="70" width="684" height="628" fill="#ffffff" />
+      <rect x="320" y="90" width="250" height="20" rx="5" fill="#e5e7eb" />
+      <rect x="320" y="130" width="644" height="10" rx="3" fill="#d1d5db" />
+      <rect x="320" y="150" width="600" height="10" rx="3" fill="#d1d5db" />
+      <rect x="320" y="170" width="620" height="10" rx="3" fill="#d1d5db" />
+    </svg>
+  </div>
 );
 
-const TwitterIcon = () => (
-    <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22.46 6C21.71 6.3 20.91 6.5 20.06 6.6C20.92 6.1 21.56 5.3 21.88 4.3C21.08 4.8 20.18 5.1 19.23 5.3C18.48 4.5 17.43 4 16.27 4C14.07 4 12.27 5.8 12.27 8C12.27 8.3 12.3 8.6 12.36 8.9C8.1 8.7 4.3 6.6 1.74 3.4C1.39 4 1.18 4.7 1.18 5.5C1.18 6.9 1.88 8.1 2.94 8.8C2.29 8.8 1.69 8.6 1.15 8.3V8.3C1.15 10.3 2.58 12 4.58 12.4C4.24 12.5 3.88 12.6 3.5 12.6C3.23 12.6 2.97 12.5 2.72 12.5C3.25 14.2 4.82 15.4 6.66 15.4C5.23 16.6 3.42 17.3 1.44 17.3C1.13 17.3 0.83 17.3 0.53 17.2C2.41 18.4 4.6 19.1 7 19.1C16.26 19.1 20.48 11.5 20.48 5.9C20.48 5.7 20.48 5.5 20.47 5.3C21.35 4.7 22 3.9 22.46 3Z" transform="translate(0.1 2)"/>
+// --- Proper SVG Mockup for iPhone (Responsive) ---
+const IphoneMockup = ({ children }) => (
+    <div className="relative w-full max-w-[280px] aspect-[375/812] mx-auto group">
+        <div className="absolute inset-0 bg-black/30 rounded-[50px] blur-xl -z-10 transform-gpu group-hover:scale-105 transition-transform duration-300"></div>
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 375 812" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="bezelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{stopColor: '#4a4a4a', stopOpacity: 1}} />
+                    <stop offset="100%" style={{stopColor: '#2c2c2c', stopOpacity: 1}} />
+                </linearGradient>
+            </defs>
+            <rect width="375" height="812" rx="60" fill="url(#bezelGradient)"/>
+            <rect x="4" y="4" width="367" height="804" rx="56" fill="transparent" stroke="rgba(255, 255, 255, 0.1)" strokeWidth="2"/>
+            <rect x="18" y="18" width="339" height="776" rx="42" fill="#000000"/>
+        </svg>
+        <div className="absolute top-[2.2%] left-[4.8%] w-[90.4%] h-[95.6%] rounded-[42px] overflow-hidden">
+            {children}
+        </div>
+        <div className="absolute top-[3.7%] left-1/2 -translate-x-1/2 w-[33.3%] h-[4.3%] bg-black rounded-full"></div>
+        <div className="absolute -left-px top-[13.5%] w-px h-[4%] bg-gray-700 rounded-l-sm opacity-80"></div>
+        <div className="absolute -left-px top-[19.7%] w-px h-[4%] bg-gray-700 rounded-l-sm opacity-80"></div>
+        <div className="absolute -right-px top-[16%] w-px h-[8%] bg-gray-700 rounded-r-sm opacity-80"></div>
+    </div>
+);
+
+// --- Specific App Screen UIs ---
+
+const AshLogo = () => (
+    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#1C1C1C"/>
+        <path d="M15.5 35V13H21.1V27.425L32.5 13H36.5V35H31V20.575L19.5 35H15.5Z" fill="white"/>
     </svg>
 );
 
-const ArrowUpRightIcon = () => (
-  <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-    <path d="M5.293 4.293a1 1 0 011.414 0L14 11.586V7a1 1 0 012 0v7a1 1 0 01-1 1h-7a1 1 0 010-2h4.586L5.293 5.707a1 1 0 010-1.414z" />
-  </svg>
+
+const MSKHubScreen = () => (
+    <div className="w-full h-full bg-white p-4 text-center text-sm text-gray-700">
+        <div className="flex justify-end"><span className="text-xl">×</span></div>
+        <div className="relative w-32 h-32 mx-auto my-4">
+            <svg className="w-full h-full" viewBox="0 0 36 36">
+                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#E6E6E6" strokeWidth="4"></path>
+                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#22c55e" strokeWidth="4" strokeDasharray="100, 100"></path>
+            </svg>
+            <div className="absolute inset-0 flex items-center justify-center text-green-500 text-3xl">✓</div>
+        </div>
+        <h2 className="text-xl font-semibold text-black">Great, all done!</h2>
+        <div className="flex justify-around my-4 text-xs">
+            <div>🔥 12 <span className="block text-gray-400">Streak</span></div>
+            <div>🏅 3 <span className="block text-gray-400">Badges</span></div>
+            <div>📈 46 <span className="block text-gray-400">Sessions</span></div>
+        </div>
+        <div className="bg-gray-50 p-3 rounded-lg text-left">
+            <p className="font-semibold text-black mb-2">AI-Enhanced Care Plan</p>
+            <p>How were your exercises today?</p>
+            <div className="flex justify-between my-2">
+                <span>😞</span><span>😕</span><span>😐</span><span>🙂</span><span>😄</span>
+            </div>
+            <p className="text-gray-400 text-xs">Painful ... Too hard ... Challenging</p>
+        </div>
+        <div className="flex justify-between items-center p-2 border-t mt-2">
+            <span className="text-gray-500">Give more feedback</span>
+            <span className="text-xl">🎤</span>
+        </div>
+        <div className="flex gap-2 mt-4">
+            <button className="w-1/2 py-2 border rounded-full">RESTART</button>
+            <button className="w-1/2 py-2 bg-black text-white rounded-full">✓ DONE</button>
+        </div>
+    </div>
 );
 
-const portfolioData = [
-  {
-    id: 1,
-    badge: 'Case Study',
-    imageUrl: 'https://placehold.co/800x600/f0e7f9/333333?text=Tablet+App+UI',
-    title: 'Task Management App',
-    description: 'Co-Founded a B2B extended reality tool, a shop of all your meetings.',
-    category: '2023',
-    gridClass: 'lg:col-span-2',
-    bgColor: 'bg-gradient-to-br from-purple-100 to-pink-100',
-  },
-  {
-    id: 2,
-    badge: null,
-    gridClass: 'flex items-center justify-center',
-    bgColor: 'bg-neutral-200',
-    content: <img src="https://placehold.co/300x300/e0e0e0/555555?text=3D+Head" alt="3D Head" className="w-full h-full object-cover" />
-  },
-  {
-    id: 3,
-    badge: 'Create',
-    category: '2022',
-    gridClass: 'flex flex-col p-8',
-    bgColor: 'bg-[#f8f6f2]',
-    content: (
-       <div className="w-full h-full flex flex-col">
-            <div className="flex justify-between items-center text-neutral-600">
-                <span className="inline-block text-sm font-medium px-3 py-1 rounded-full border border-neutral-400">Create</span>
-                <span className="text-sm font-medium">2022</span>
-            </div>
-            <div className="flex-grow flex items-center justify-center">
-                <h3 className="text-4xl text-neutral-300">Until now.</h3>
-            </div>
-             <div className="flex items-center">
-                <svg className="w-8 h-8 mr-3" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#1C1C1C"></path><path d="M16.16 20.48H22.4V22.4H9.6V9.76H11.52V18.56L21.52 8.48L22.88 9.84L12.96 19.84H16.16V20.48Z" fill="white"></path></svg>
+const PhysicalTherapyScreen = () => (
+    <div className="w-full h-full bg-gray-50 p-4 text-sm text-gray-700 text-left">
+        <div className="flex justify-between items-center">
+            <p className="font-semibold text-black">Good morning, Jane!</p>
+            <div>👤 🔔</div>
+        </div>
+        <div className="bg-white p-4 rounded-lg my-4 text-center shadow-sm">
+            <div className="w-16 h-12 bg-gray-100 mx-auto rounded-md mb-2"></div>
+            <h3 className="font-semibold text-black">Schedule a virtual session.</h3>
+            <p className="text-xs text-gray-400 mb-2">No sessions currently scheduled.</p>
+            <button className="py-2 px-4 border rounded-full text-xs font-semibold">SCHEDULE NOW</button>
+        </div>
+        <h3 className="font-bold text-black mb-2">Care Plan</h3>
+        <div className="bg-white p-3 rounded-lg shadow-sm">
+            <div className="flex items-center">
+                <div className="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
                 <div>
-                    <h3 className="text-lg font-semibold text-neutral-800">Play, organize, and win!</h3>
+                    <p className="font-semibold text-black">Joe Thomas</p>
+                    <p className="text-xs text-gray-400">Physical Therapist</p>
                 </div>
             </div>
-       </div>
-    )
-  },
-  {
-    id: 4,
-    type: 'detailedMobileApp',
-    badge: 'Case Study',
-    imageUrl: 'https://placehold.co/400x800/e0f7f1/333333?text=Mobile+App',
-    title: 'Self-care and mental health hub',
-    description: 'Assisting users with their mental health.',
-    author: {
-        name: 'Eduardo Hernandez',
-        avatar: 'https://placehold.co/40x40/e0e0e0/555555?text=EH'
-    },
-    rating: 5,
-    category: '2023',
-    gridClass: 'md:row-span-2',
-    bgColor: 'bg-gradient-to-b from-green-100 to-blue-100'
-  },
-  {
-    id: 5,
-    type: 'detailedMobileApp',
-    badge: 'Case Study',
-    imageUrl: 'https://placehold.co/400x800/fff9e6/333333?text=Fitness+App',
-    title: 'Virtual Physical Therapy',
-    description: 'Assisting users with their physical therapy.',
-    author: {
-        name: 'Eduardo Hernandez',
-        avatar: 'https://placehold.co/40x40/e0e0e0/555555?text=EH'
-    },
-    rating: 5,
-    category: '2022',
-    gridClass: 'md:row-span-2',
-    bgColor: 'bg-neutral-100'
-  },
-   {
-    id: 6,
-    badge: '2022',
-    title: 'Overview',
-    description: 'A brief overview about this project. The goal was to fix the user journey and drop-off rates by improving the visual design of the app.',
-    category: 'Research',
-    gridClass: 'lg:col-span-1',
-    bgColor: 'bg-neutral-200/50'
-  },
-  {
-    id: 7,
-    badge: '2022',
-    imageUrl: 'https://placehold.co/800x600/e6f2ff/333333?text=Web+Dashboard',
-    title: 'Dashboard for MilkyPlan',
-    category: 'Web App',
-    gridClass: 'lg:col-span-2',
-    bgColor: 'bg-gradient-to-tr from-blue-100 to-gray-100'
-  },
-  {
-    id: 8,
-    badge: '2021',
-    gridClass: 'flex items-center justify-center space-x-4',
-    bgColor: 'bg-neutral-200/50',
-    content: (
-        <div className="flex items-center justify-around w-full">
-            <div className="p-4 bg-white rounded-full shadow-md"><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-red-500" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" /></svg></div>
-            <div className="p-4 bg-white rounded-full shadow-md"><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-500" viewBox="0 0 20 20" fill="currentColor"><path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" /></svg></div>
-            <div className="p-4 bg-white rounded-full shadow-md"><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a6 6 0 00-6 6v3.586l-1.293 1.293a1 1 0 001.414 1.414L6 12.414V8a4 4 0 018 0v4.414l2.293 2.293a1 1 0 001.414-1.414L16 13.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" /></svg></div>
+            <div className="flex justify-between items-center mt-3 p-3 bg-blue-50 rounded-lg">
+                <div>
+                    <p className="font-semibold text-black">Knee rehabilitation</p>
+                    <p className="text-xs text-gray-400">Updated 3 days ago</p>
+                </div>
+                <button className="py-1 px-3 bg-black text-white text-xs rounded-full flex items-center">START ▶</button>
+            </div>
         </div>
-    )
-  },
-  {
-    id: 9,
-    badge: '2020',
-    title: 'Overview',
-    description: 'A brief overview about this project. The goal was to fix the user journey and drop-off rates by improving the visual design of the app.',
-    category: 'Case Study',
-    gridClass: '',
-    bgColor: 'bg-neutral-200/50'
-  },
-  {
-    id: 10,
-    badge: null,
-    gridClass: 'lg:col-span-2 flex items-center justify-center',
-    bgColor: 'bg-gradient-to-br from-cyan-100 to-teal-100',
-    content: (
-        <div className="text-center">
-            <img src="https://placehold.co/200x200/ffffff/e04b4b?text=HOLY" alt="Holy graphic" className="mx-auto" />
-        </div>
-    )
-  }
-];
+    </div>
+);
 
+const AwardWinner = () => (
+    <div className="flex items-center">
+        <div className="w-8 h-8 bg-yellow-300 rounded-full flex items-center justify-center mr-2 text-lg">🏆</div>
+        <div>
+            <p className="text-sm font-semibold text-black">Award Winner</p>
+            <p className="text-xs text-gray-500">Top Performer</p>
+        </div>
+    </div>
+);
+
+const UserRating = ({ rating }) => (
+    <div className="flex items-center">
+        <div className="flex mr-2">
+            {[...Array(5)].map((_, i) => (
+                <svg key={i} className={`w-4 h-4 ${i < 4 ? 'text-yellow-400' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8-2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            ))}
+        </div>
+        <div>
+            <p className="text-sm font-semibold text-black">{rating} Ave. user rating</p>
+        </div>
+    </div>
+);
+
+// --- New Components from image ---
+const UXCollectiveArticle = () => (
+    <div className="p-6 h-full flex flex-col justify-between">
+        <div>
+            <span className="inline-block text-sm font-medium px-3 py-1 rounded-full border border-neutral-400 mb-4">Article</span>
+            <div className="flex items-center mb-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2"><path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#3B82F6"></path><path d="M6.34314 12L12 6.34314L17.6569 12L12 17.6569L6.34314 12Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+                <span className="font-semibold">UX Collective</span>
+            </div>
+            <h3 className="font-semibold text-lg text-black mb-2">Death to the double diamond</h3>
+            <p className="text-sm text-gray-600">Here are two extremes. There's always the exact same predictable path to solving a problem. For example, I can tell you exactly...</p>
+        </div>
+        <div>
+            <p className="font-semibold text-sm text-black">Eduardo Hernandez</p>
+            <p className="text-xs text-gray-500">Aug 7, 2023</p>
+        </div>
+    </div>
+);
+
+const DetailsSection = () => (
+    <div className="p-6 h-full">
+        <span className="inline-block text-sm font-medium px-3 py-1 rounded-full border border-neutral-400 mb-4">Details</span>
+        <div className="grid grid-cols-2 gap-4 text-center">
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+                <div className="text-3xl">❤️</div>
+                <p className="font-semibold mt-2">1:1's</p>
+                <div className="flex justify-center gap-2 mt-2 text-gray-400">
+                    <span>✏️</span><span>🗑️</span>
+                </div>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+                <div className="text-3xl">🏁</div>
+                <p className="font-semibold mt-2">Beta Launch</p>
+                <div className="flex justify-center gap-2 mt-2 text-gray-400">
+                    <span>✏️</span><span>🗑️</span>
+                </div>
+            </div>
+             <div className="bg-white p-4 rounded-lg shadow-sm">
+                 <div className="h-8 w-8 rounded-full bg-gray-200 mx-auto flex items-center justify-center text-green-500">✓</div>
+            </div>
+        </div>
+    </div>
+);
+
+const GymBillingApp = () => (
+    <div className="p-6 h-full flex flex-col justify-between">
+        <div>
+           <span className="inline-block text-sm font-medium px-3 py-1 rounded-full border border-neutral-400 mb-4">Case Study</span>
+           <div className="my-4">
+                <svg viewBox="0 0 1024 768" className="w-full h-auto max-w-full rounded-lg shadow-lg" style={{aspectRatio: '4/3'}}>
+                    <rect x="0" y="0" width="1024" height="768" rx="20" fill="#ffffff" />
+                    <rect x="0" y="0" width="1024" height="60" fill="#f3f4f6"/>
+                    <text x="20" y="40" fontFamily="Inter, sans-serif" fontSize="16" fill="#333">PROMOS</text>
+                    <rect x="10" y="70" width="1004" height="688" fill="#f9fafb"/>
+                     <text x="30" y="100" fontFamily="Inter, sans-serif" fontSize="14" fill="#666">All Claims</text>
+                    <text x="30" y="120" fontFamily="Inter, sans-serif" fontSize="16" fill="#111" fontWeight="bold">LA Fitness South Bay</text>
+                    {/* Table Header */}
+                    {['Requisition', 'Type', 'Date', 'Status'].map((header, i) => (
+                        <text key={i} x={30 + i * 150} y="150" fontFamily="Inter, sans-serif" fontSize="12" fill="#999">{header}</text>
+                    ))}
+                    {/* Table Rows - Dummy Data */}
+                    {[...Array(6)].map((_, rowIndex) => (
+                        <g key={rowIndex}>
+                            <text x="30" y={180 + rowIndex * 30} fontFamily="Inter, sans-serif" fontSize="14" fill="#333">LA Fitness South Bay</text>
+                             <text x="180" y={180 + rowIndex * 30} fontFamily="Inter, sans-serif" fontSize="14" fill="#333">Corporate</text>
+                            <text x="330" y={180 + rowIndex * 30} fontFamily="Inter, sans-serif" fontSize="14" fill="#333">08/15/2023</text>
+                            <rect x="470" y={170 + rowIndex * 30} width="60" height="20" rx="10" fill={rowIndex % 2 === 0 ? "#dcfce7" : "#e0e7ff"}/>
+                             <text x="480" y={184 + rowIndex * 30} fontFamily="Inter, sans-serif" fontSize="12" fill={rowIndex % 2 === 0 ? "#166534" : "#3730a3"}>{rowIndex % 2 === 0 ? "Done" : "Assigned"}</text>
+                        </g>
+                    ))}
+                     <rect x="700" y="70" width="314" height="688" fill="#ffffff" stroke="#e5e7eb" strokeWidth="1"/>
+                </svg>
+           </div>
+        </div>
+        <div className="flex items-start">
+            <AshLogo />
+            <div className="ml-3">
+                <h3 className="text-lg font-semibold text-neutral-800">Internal Gym Billing App</h3>
+                <p className="text-neutral-600 text-sm">Some awesome headline alv.</p>
+            </div>
+        </div>
+    </div>
+);
+
+
+// --- Main Data Arrays ---
+const portfolioData = [
+    { id: 1, type: 'custom', content: <IpadMockup />, gridClass: 'lg:col-span-2', bgColor: 'bg-gradient-to-br from-purple-100 to-pink-100' },
+    { id: 2, type: 'custom', gridClass: 'flex items-center justify-center', bgColor: 'bg-neutral-200', content: <img src="https://placehold.co/300x300/e0e0e0/555555?text=3D+Head" alt="3D Head" className="w-full h-full object-cover" /> },
+    { id: 3, type: 'custom', gridClass: 'flex flex-col p-8', bgColor: 'bg-[#f8f6f2]', content: ( <div className="w-full h-full flex flex-col"> <div className="flex justify-between items-center text-neutral-600"> <span className="inline-block text-sm font-medium px-3 py-1 rounded-full border border-neutral-400">Create</span> <span className="text-sm font-medium">2022</span> </div> <div className="flex-grow flex items-center justify-center"> <h3 className="text-4xl text-neutral-300">Until now.</h3> </div> <div className="flex items-center"> <svg className="w-8 h-8 mr-3" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 32C37.2548 32 48 24.8366 48 16C48 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#1C1C1C"></path><path d="M16.16 20.48H22.4V22.4H9.6V9.76H11.52V18.56L21.52 8.48L22.88 9.84L12.96 19.84H16.16V20.48Z" fill="white"></path></svg> <div> <h3 className="text-lg font-semibold text-neutral-800">Play, organize, and win!</h3> </div> </div> </div> ) },
+    { id: 4, type: 'detailedMobileApp', badge: 'Case Study', appContent: <MSKHubScreen />, logo: <AshLogo />, title: 'ASHCare AI Enhanced MSK Hub', headline: 'Some awesome headline alv.', footerContent: <AwardWinner />, category: '2023', gridClass: 'md:row-span-2', bgColor: 'bg-gradient-to-br from-blue-100 via-green-50 to-teal-50' },
+    { id: 5, type: 'detailedMobileApp', badge: 'Case Study', appContent: <PhysicalTherapyScreen />, logo: <AshLogo />, title: 'Virtual Physical Therapy', headline: 'Some awesome headline alv.', footerContent: <UserRating rating="4.86" />, category: '2022', gridClass: 'md:row-span-2', bgColor: 'bg-gradient-to-br from-gray-100 to-neutral-200' },
+    { id: 6, type: 'custom', gridClass: 'lg:col-span-1', bgColor: 'bg-neutral-100', content: <UXCollectiveArticle /> },
+    { id: 7, type: 'custom', gridClass: 'lg:col-span-2', bgColor: 'bg-gradient-to-br from-purple-100 to-indigo-100', content: <GymBillingApp /> },
+    { id: 8, type: 'custom', gridClass: 'lg:col-span-1', bgColor: 'bg-neutral-100', content: <DetailsSection /> },
+    { id: 9, type: 'custom', badge: '2020', title: 'Overview', description: 'A brief overview about this project. The goal was to fix the user journey and drop-off rates by improving the visual design of the app.', category: 'Case Study', gridClass: '', bgColor: 'bg-neutral-200/50' },
+    { id: 10, type: 'custom', badge: null, gridClass: 'lg:col-span-2 flex items-center justify-center', bgColor: 'bg-gradient-to-br from-cyan-100 to-teal-100', content: ( <div className="text-center"> <img src="https://placehold.co/200x200/ffffff/e04b4b?text=HOLY" alt="Holy graphic" className="mx-auto" /> </div> ) }
+];
 
 function App() {
   return (
     <>
-      {/* Custom fonts ke liye, hum unhe seedhe style tag ke zariye import kar rahe hain.
-        'Playfair Display' serif headings ke liye aur 'Inter' sans-serif body text ke liye.
-      */}
       <style>
         {`
-          @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
-          
-          .font-serif-display { 
-            font-family: 'Playfair Display', serif; 
-          }
-          
-          .font-sans-body { 
-            font-family: 'Inter', sans-serif; 
-          }
+          @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+          .font-serif-display { font-family: 'Playfair Display', serif; }
+          .font-sans-body { font-family: 'Inter', sans-serif; }
         `}
       </style>
       <div className="bg-[#f8f6f2] min-h-screen font-sans-body text-black">
@@ -173,14 +260,14 @@ function App() {
           <div className="border-l-2 border-black">
             <div className="pl-6 md:pl-8">
 
-              {/* --- Header with Dividers --- */}
               <header className="grid grid-cols-1 md:grid-cols-3 items-center text-sm py-4 border-b-2 border-black">
-                <div className="font-semibold">
+                <div className="font-semibold relative">
+                  <span className="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-red-500 rounded-full"></span>
                   © Eduardo Hernandez
                   <br />
                   <span className="font-normal text-neutral-600">Based in Salt Lake City, Utah</span>
                 </div>
-                <div className="hidden md:flex border-l-2 border-r-2 border-black h-full items-center px-4 my-[-1rem] py-4">
+                <div className="hidden md:flex justify-center border-l-2 border-r-2 border-black h-full items-center px-4 my-[-1rem] py-4">
                   <div>
                     <span className="font-semibold">Currently available</span>
                     <br />
@@ -196,7 +283,6 @@ function App() {
                 </div>
               </header>
 
-              {/* --- Hero Section --- */}
               <main className="py-16 md:py-24 border-b-2 border-black">
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="md:col-span-2">
@@ -206,84 +292,71 @@ function App() {
                   </div>
                   <div className="md:col-span-1">
                     <h4 className="font-semibold mb-3">Recent Highlights</h4>
-                    <ul className="space-y-2 text-base text-neutral-700">
-                        <li>Harvard Business School Online</li>
-                        <li>Disruptive Strategy</li>
-                        <li className="pt-2">Awwwards - Site of the Day</li>
-                        <li>Honorable Mention</li>
-                        <li className="pt-2">The Webby Awards - Honoree</li>
-                        <li>Websites and Mobile Sites</li>
-                     </ul>
+                    <ul className="space-y-2 text-neutral-600">
+                      <li>Harvard Business School Online<br /><span className="text-xs text-neutral-500">Disruptive Strategy</span></li>
+                      <li>Awwwards - Site of the Day<br /><span className="text-xs text-neutral-500">Honorable Mention</span></li>
+                      <li>The Webby Awards - Honoree<br /><span className="text-xs text-neutral-500">Websites and Mobile Sites</span></li>
+                    </ul>
                   </div>
                 </div>
               </main>
 
-              {/* --- Info Grid Section with Dividers --- */}
-              <section className="grid grid-cols-1 md:grid-cols-4 border-b-2 border-black text-sm">
-                <div className="p-6">
-                    <h4 className="font-semibold text-black mb-2">My Work</h4>
-                    <p className="text-neutral-600">
-                      I'm Eduardo Hernandez, a first time co-founder, product designer, wannabe developer, and occasionally a writer.
-                    </p>
+              <section className="grid grid-cols-1 md:grid-cols-2 text-sm border-b-2 border-black">
+                <div className="p-8">
+                    <div className="relative">
+                        <span className="absolute -left-14 top-1.5 w-2 h-2 bg-red-500 rounded-full"></span>
+                        <p className="font-semibold">Eduardo Hernandez</p>
+                        <p className="text-neutral-600">Open to new opportunities</p>
+                    </div>
                 </div>
-                <div className="p-6 border-t-2 md:border-t-0 md:border-l-2 border-black">
-                     <h4 className="font-semibold text-black mb-2">Awards</h4>
-                     <ul className="space-y-2 text-neutral-600">
-                        <li>The Webby's</li>
-                        <li>CSSDA</li>
-                        <li>Awwwards</li>
-                        <li>FWA</li>
-                     </ul>
+                <div className="grid grid-cols-1 md:grid-cols-2 md:border-l-2 border-black">
+                     <div className="p-8">
+                        <p className="text-neutral-600">Email me at</p>
+                        <p className="font-semibold">Eduardoh@hey.com</p>
+                    </div>
+                    <div className="p-8">
+                        <p className="text-neutral-600">Connect with me</p>
+                         <div className="flex space-x-4 font-semibold">
+                            <a href="#" className="underline hover:no-underline">LinkedIn</a>
+                            <a href="#" className="underline hover:no-underline">BlueSky</a>
+                            <a href="#" className="underline hover:no-underline">Medium</a>
+                         </div>
+                    </div>
                 </div>
-                <div className="p-6 border-t-2 md:border-t-0 md:border-l-2 border-black col-span-1 md:col-span-2">
-                     <h4 className="font-semibold text-black mb-2">Elsewhere</h4>
-                     <div className="flex space-x-6">
-                        <a href="#" className="flex items-center space-x-2 font-semibold hover:underline">
-                          <DribbbleIcon /> <span>Dribbble</span>
-                        </a>
-                        <a href="#" className="flex items-center space-x-2 font-semibold hover:underline">
-                           <TwitterIcon /> <span>Twitter</span>
-                        </a>
-                     </div>
-                </div>
-            </section>
+              </section>
 
-            {/* --- Portfolio Grid --- */}
-            <section>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2px] bg-black border-t-2 border-black">
+              <section>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2px] bg-black">
                     {portfolioData.map(item => {
                         if (item.type === 'detailedMobileApp') {
                             return (
                                 <div key={item.id} className={`p-6 flex flex-col justify-between ${item.gridClass || ''} ${item.bgColor || 'bg-[#f8f6f2]'}`}>
                                     <div>
-                                        <div className="flex justify-between items-center text-neutral-600">
+                                        <div className="flex justify-between items-center text-neutral-600 mb-4">
                                             <span className="inline-block text-sm font-medium px-3 py-1 rounded-full border border-neutral-400">{item.badge}</span>
-                                            <span className="text-sm font-medium">{item.category}</span>
                                         </div>
-                                        <div className="my-4 aspect-auto overflow-hidden flex items-center justify-center">
-                                            <img src={item.imageUrl} alt={item.title} className="w-auto h-full max-h-96 object-contain" />
+                                        <div className="my-4">
+                                            <IphoneMockup>
+                                                {item.appContent}
+                                            </IphoneMockup>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div className="flex items-start mb-4">
-                                            <svg className="w-8 h-8 mr-3 flex-shrink-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#1C1C1C"></path><path d="M16.16 20.48H22.4V22.4H9.6V9.76H11.52V18.56L21.52 8.48L22.88 9.84L12.96 19.84H16.16V20.48Z" fill="white"></path></svg>
-                                            <div>
+                                    <div className="text-left">
+                                        <div className="flex items-start mb-2">
+                                            {item.logo}
+                                            <div className="ml-3">
                                                 <h3 className="text-lg font-semibold text-neutral-800">{item.title}</h3>
+                                                <p className="text-neutral-600 text-sm">{item.headline}</p>
                                             </div>
                                         </div>
-                                        <div className="flex items-center mb-2 pl-11">
-                                            <img src={item.author.avatar} alt={item.author.name} className="w-6 h-6 rounded-full mr-2" />
-                                            <span className="text-sm font-semibold">{item.author.name}</span>
-                                        </div>
-                                        <div className="flex items-center pl-11">
-                                            {[...Array(5)].map((_, i) => (
-                                                <svg key={i} className={`w-4 h-4 ${i < item.rating ? 'text-yellow-400' : 'text-neutral-300'}`} fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8-2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                                            ))}
+                                        <div className="mt-4 pl-1">
+                                            {item.footerContent}
                                         </div>
                                     </div>
                                 </div>
                             );
                         }
+                        // Default card for 'custom' type
                         return (
                             <div key={item.id} className={`p-6 ${item.gridClass || ''} ${item.bgColor || 'bg-[#f8f6f2]'}`}>
                                 {item.content ? (
@@ -302,7 +375,6 @@ function App() {
                                             )}
                                         </div>
                                         <div className="flex items-center">
-                                            <svg className="w-8 h-8 mr-3 flex-shrink-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#1C1C1C"></path><path d="M16.16 20.48H22.4V22.4H9.6V9.76H11.52V18.56L21.52 8.48L22.88 9.84L12.96 19.84H16.16V20.48Z" fill="white"></path></svg>
                                             <div>
                                                 {item.title && <h3 className="text-lg font-semibold text-neutral-800">{item.title}</h3>}
                                                 {item.description && <p className="text-neutral-600 text-sm">{item.description}</p>}
@@ -314,21 +386,14 @@ function App() {
                         )
                     })}
                 </div>
-            </section>
-
+              </section>
+            </div>
           </div>
         </div>
       </div>
-      <footer className="text-center p-8 mt-16 text-neutral-500 text-sm">
-          <p>Inspired by the portfolio of Eduardo Hernandez.</p>
-          <p>Replicated with React and Tailwind CSS.</p>
-      </footer>
-    </div>
     </>
   );
 }
 
 export default App;
-
-
 
